@@ -1,4 +1,5 @@
 import './globals.css'
+import { Toaster } from 'sonner'
 import type { Metadata } from 'next'
 import { dark } from '@clerk/themes'
 import { Inter } from 'next/font/google'
@@ -27,6 +28,7 @@ export default function RootLayout({
             forcedTheme="dark"
             storageKey="gamehub-theme"
           >
+            <Toaster theme="light" position="bottom-center" />
             {children}
           </ThemeProvider>
         </body>
