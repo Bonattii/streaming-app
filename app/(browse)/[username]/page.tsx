@@ -12,9 +12,7 @@ interface UserPageProps {
   }
 }
 
-export default async function UserPage({
-  params: { username }
-}: UserPageProps) {
+export default async function Page({ params: { username } }: UserPageProps) {
   const user = await getUserByUsername(username)
 
   if (!user) {
