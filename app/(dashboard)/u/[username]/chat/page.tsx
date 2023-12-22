@@ -24,7 +24,7 @@ export default async function Page() {
           value={stream.isChatEnabled}
         />
         <ToggleCard
-          field="isChatDelayed"
+          field="isChatDelay"
           label="Delay chat"
           value={stream.isChatDelay}
         />

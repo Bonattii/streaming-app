@@ -7,7 +7,7 @@ import { updateStream } from '@/actions/stream'
 import { Switch } from '@/components/ui/switch'
 import { Skeleton } from '@/components/ui/skeleton'
 
-type FieldTypes = 'isChatEnabled' | 'isChatDelayed' | 'isChatFollowersOnly'
+type FieldTypes = 'isChatEnabled' | 'isChatDelay' | 'isChatFollowersOnly'
 
 interface ToggleCardProps {
   label: string
