@@ -7,7 +7,14 @@ import { VerifyMark } from '@/components/verified-mark'
 import { Thumbnail, ThumbnailSkeleton } from '@/components/thumbnail'
 
 interface ResultCardProps {
-  data: Stream & { user: User }
+  data: {
+    id: string
+    name: string
+    thumbnailUrl: string | null
+    isLive: boolean
+    updatedAt: Date
+    user: User
+  }
 }
 
 export function ResultCard({ data }: ResultCardProps) {
